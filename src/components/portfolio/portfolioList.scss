@@ -1,0 +1,18 @@
+/** @format */
+
+@import "../globalStyle.scss";
+.portfolioList {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 10px 10px;
+  cursor: pointer;
+  border-radius: 15px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+
+  &.active {
+    background-color: $topNavBg;
+    color: white;
+  }
+}

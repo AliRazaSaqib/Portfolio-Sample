@@ -1,0 +1,33 @@
+/** @format */
+
+$mainColor: white;
+$topNavBg: #303f9f;
+$serimon: #dc143c;
+$icons: black;
+
+$width: 1350px;
+$anonther_width: 1200px;
+$tablet_mode: 1000px;
+$mobile: 600px;
+@mixin imageSizeDecrease {
+  @media (max-width: #{$width}) {
+    @content;
+  }
+}
+@mixin textSizeDecrease {
+  @media (max-width: #{$anonther_width}) {
+    @content;
+  }
+}
+
+@mixin tabletMode {
+  @media (max-width: #{$tablet_mode}) {
+    @content;
+  }
+}
+
+@mixin mobileMode {
+  @media (max-width: #{$mobile}) {
+    @content;
+  }
+}
